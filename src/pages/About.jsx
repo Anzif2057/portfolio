@@ -1,6 +1,25 @@
 import './About.css';
+import BackToTop from '../components/BackToTop';
 
 const About = () => {
+    const handleDownloadCV = async (e) => {
+        e.preventDefault();
+        try {
+            const response = await fetch('/Anzif_CV.pdf');
+            const blob = await response.blob();
+            const url = window.URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = 'Anzif_Anvaj_CV.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            window.URL.revokeObjectURL(url);
+        } catch (error) {
+            console.error('Error downloading CV:', error);
+        }
+    };
+
     return (
         <div className="about-page">
             <div className="about-container">
@@ -21,6 +40,14 @@ const About = () => {
                         <p className="about-subtitle">Product & UI/UX Designer</p>
 
                         <div className="about-contact">
+                            <a href="/Anzif_CV.pdf" target="_blank" rel="noopener noreferrer" className="contact-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                    <polyline points="7 10 12 15 17 10" />
+                                    <line x1="12" y1="15" x2="12" y2="3" />
+                                </svg>
+                                View CV
+                            </a>
                             <a href="mailto:anzif.anvaj@gmail.com" className="contact-link">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                                     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
@@ -126,6 +153,7 @@ const About = () => {
                     </section>
                 </div>
             </div>
+            <BackToTop />
         </div>
     );
 };

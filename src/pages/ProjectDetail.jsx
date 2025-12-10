@@ -1,5 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
+import BackToTop from '../components/BackToTop';
 import './ProjectDetail.css';
 
 const projectData = {
@@ -7,7 +8,7 @@ const projectData = {
         title: 'Ravewards Mobile App',
         category: 'Mobile Design',
         description: 'A modern nightlife loyalty app designed for smooth and effortless perk redemption.',
-        image: '/work1.png',
+        image: '/work1.webp',
         projectType: 'End-to-End Mobile App',
         role: 'Product & UI/UX Lead',
         industry: 'Loyalty, Lifestyle, SaaS',
@@ -21,7 +22,7 @@ const projectData = {
         title: 'CyberSecurity Brand Website',
         category: 'Web Design',
         description: 'A visually engaging website presenting complex security solutions for diverse users.',
-        image: '/work2.png',
+        image: '/work2.webp',
         projectType: 'End-to-End Web Platform',
         role: 'UI/UX Designer',
         industry: 'Cybersecurity, Technology',
@@ -35,7 +36,7 @@ const projectData = {
         title: 'CliniQs Mental Health App',
         category: 'Mobile Design',
         description: 'A mental health app that helps users connect with psychologists and track their wellness.',
-        image: '/work3.png',
+        image: '/work3.webp',
         projectType: 'Mobile App',
         role: 'UI/UX Designer',
         industry: 'Health, Psychology',
@@ -121,6 +122,7 @@ const ProjectDetail = () => {
                     <p>{project.results}</p>
                 </div>
             </div>
+            <BackToTop />
         </div>
     );
 };

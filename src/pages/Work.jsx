@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
+import BackToTop from '../components/BackToTop';
 import './Work.css';
 
 const workData = [
@@ -9,7 +10,7 @@ const workData = [
         category: 'Mobile Design',
         description: 'A modern nightlife loyalty app designed for smooth and effortless perk redemption.',
         shortDescription: 'Building a seamless club-rewards experience that helps users earn, redeem, and discover perks effortlessly, while enabling venues to boost engagement and customer loyalty.',
-        image: '/work1.png',
+        image: '/work1.webp',
         projectType: 'End-to-End Mobile App',
         role: 'Product & UI/UX Lead',
         industry: 'Loyalty, Lifestyle, SaaS',
@@ -21,7 +22,7 @@ const workData = [
         category: 'Web Design',
         description: 'A visually engaging website presenting complex security solutions for diverse users.',
         shortDescription: "Showcasing Company's brand and products through a clear, engaging, and accessible web experience with modular components.",
-        image: '/work2.png',
+        image: '/work2.webp',
         projectType: 'End-to-End Web Platform',
         role: 'UI/UX Designer',
         industry: 'Cybersecurity, Technology',
@@ -33,7 +34,7 @@ const workData = [
         category: 'Mobile Design',
         description: 'A fitness tracking application that motivates users to achieve their health goals.',
         shortDescription: 'Creating a supportive platform where users can connect with certified psychologists, schedule video sessions, and access resources and peer support for holistic mental well-being.',
-        image: '/work3.png',
+        image: '/work3.webp',
         projectType: 'Mobile App',
         role: 'UI/UX Designer',
         industry: 'Health, Psychology',
@@ -143,6 +144,7 @@ const Work = () => {
                     ))}
                 </div>
             </section>
+            <BackToTop />
         </div>
     );
 };
