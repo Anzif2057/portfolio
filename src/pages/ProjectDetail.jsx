@@ -4,6 +4,20 @@ import BackToTop from '../components/BackToTop';
 import './ProjectDetail.css';
 
 const projectData = {
+    '9lives-platform': {
+        title: '9Lives Platform',
+        category: 'Web Design',
+        description: 'A curated marketplace empowering independent businesses to launch, grow, and connect with customers.',
+        image: '/work0.webp',
+        projectType: 'End-to-End Web Platform (Multi-Vendor Marketplace)',
+        role: 'UI/UX Designer',
+        industry: 'E-commerce, Marketplace, SaaS',
+        duration: '5 months',
+        tools: 'Figma, Miro, Framer',
+        challenge: 'Independent boutiques and creators working with 9Lives faced technical and design barriers when establishing an online presence, making it difficult to showcase their brands professionally and reach the right audience.',
+        solution: 'As part of the 9Lives team, I designed a clean and intuitive platform that enables businesses to create polished storefront-style profiles using AI-assisted tools. The experience focuses on simplicity, clear onboarding, and strong visual hierarchy, while preserving a curated marketplace feel that highlights each brand.',
+        results: 'A refined dual-sided marketplace for 9Lives that allows creators to launch quickly and confidently, while offering customers a thoughtful discovery experience centered around independent brands and intentional commerce.'
+    },
     'ravewards-app': {
         title: 'Ravewards Mobile App',
         category: 'Mobile Design',

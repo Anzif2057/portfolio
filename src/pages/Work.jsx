@@ -6,6 +6,18 @@ import './Work.css';
 const workData = [
     {
         id: 1,
+        title: '9Lives Platform',
+        category: 'Web Design',
+        description: 'A curated marketplace empowering independent businesses to launch, grow, and connect with customers.',
+        shortDescription: 'Building a curated marketplace that empowers independent businesses to launch, grow, and connect with customers who value quality, purpose, and originality.',
+        image: '/work0.webp',
+        projectType: 'End-to-End Web Platform (Multi-Vendor Marketplace)',
+        role: 'UI/UX Designer',
+        industry: 'E-commerce, Marketplace, SaaS',
+        slug: '9lives-platform'
+    },
+    {
+        id: 2,
         title: 'Ravewards App',
         category: 'Mobile Design',
         description: 'A modern nightlife loyalty app designed for smooth and effortless perk redemption.',
@@ -17,7 +29,7 @@ const workData = [
         slug: 'ravewards-app'
     },
     {
-        id: 2,
+        id: 3,
         title: 'CyberSecurity Brand Website',
         category: 'Web Design',
         description: 'A visually engaging website presenting complex security solutions for diverse users.',
@@ -29,7 +41,7 @@ const workData = [
         slug: 'cybersecurity-brand-website'
     },
     {
-        id: 3,
+        id: 4,
         title: 'Cliniqs Mental Health App',
         category: 'Mobile Design',
         description: 'A fitness tracking application that motivates users to achieve their health goals.',
